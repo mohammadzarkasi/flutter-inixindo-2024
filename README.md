@@ -1,6 +1,6 @@
 # inixindo
 
-A new Flutter project.
+Pelatihan flutter inixindo surabaya
 
 ## Getting Started
 
