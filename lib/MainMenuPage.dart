@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:inixindo/DaftarJadwalSkripsi.dart';
 import 'package:inixindo/GaleriPage.dart';
+import 'package:inixindo/TambahJadwalSkripsi.dart';
 
 class MainMenuPage extends StatelessWidget {
   const MainMenuPage({super.key});
@@ -41,6 +42,11 @@ class MainMenuPage extends StatelessWidget {
             child: ListTile(
               title: Text('Dropdown'),
               subtitle: Text('Menambah Jadwal Skripsi'),
+              onTap: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (ctx){
+                  return TambahJadwalSkripsiPage();
+                }));
+              },
             ),
           ),
         ],
