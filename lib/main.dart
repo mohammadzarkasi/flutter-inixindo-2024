@@ -1,8 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:inixindo/GaleriPage.dart';
+import 'package:inixindo/MainMenuPage.dart';
+import 'package:intl/date_symbol_data_http_request.dart';
+import 'package:intl/intl.dart';
 
 void main() {
+  // initializeDateFormatting('id_ID', '').then((_){
+  // Intl.withLocale('id_ID', (){
+  //   print('intl with locale...');
+  // });
+  // initializeDateFormatting('id_ID', '').then((v){
+  //   print('Intl date initialized');
+  // });
   runApp(const MyApp());
+  // });
+
 }
 
 class MyApp extends StatelessWidget {
@@ -19,7 +31,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: false,
       ),
       // home: const MyHomePage(),
-      home: GaleriPage(),
+      home: MainMenuPage(),
     );
   }
 }
