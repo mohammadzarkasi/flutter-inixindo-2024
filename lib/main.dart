@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:inixindo/widget_input_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -180,6 +181,13 @@ class _MyHomePageState extends State<MyHomePage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           const Text('Selamat datang di Fasilkom App'),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(builder: (_) {
+                  return WidgetInputScreen();
+                }));
+              },
+              child: Text('Widget Input')),
         ],
       ),
     );
@@ -253,7 +261,6 @@ class _MyHomePageState extends State<MyHomePage> {
             trailing: _submenuJadwal == false
                 ? Icon(Icons.keyboard_arrow_right)
                 : Icon(Icons.keyboard_arrow_down),
-            
             onExpansionChanged: (v) {
               setState(() {
                 _submenuJadwal = v;
