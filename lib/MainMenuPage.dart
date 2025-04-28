@@ -10,7 +10,7 @@ class MainMenuPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Main Menu'),
+        title: Text('Menu Utama'),
       ),
       body: ListView(
         children: [
@@ -18,6 +18,7 @@ class MainMenuPage extends StatelessWidget {
             margin: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
             child: ListTile(
               title: Text('Galeri Gambar'),
+              subtitle: Text('Gridview'),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (ctx) {
                   return GaleriPage();
